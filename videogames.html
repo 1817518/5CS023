@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Display Data in HTML Table</title>
+</head>
+<body>
+    <h2>Database Table Data</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <!-- Add more table headers for other columns if needed -->
+        </tr>
+        <?php foreach ($rows as $row): ?>
+            <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['name']; ?></td>
+                <!-- Add more table cells for other columns if needed -->
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</body>
+</html>
+In the above HTML code, the PHP foreach loop is used to iterate through the $rows array and populate the table rows with the retrieved data. Adjust the table headers and cells according to the columns in your database table.
+
+Remember to replace your_table_name with the actual name of your database table in both the PHP code and the SQL query. Also, ensure that your PHP file has a .php extension (e.g., index.php) for the server to process the PHP code.
+
+
+
+
+Is this conversation helpful so far?
